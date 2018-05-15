@@ -8,22 +8,62 @@
     <title>TrueMoveQuickWin</title>
   </head>
   <body>
-    <ul class="nav nav-tabs" role="tablist">
-      <li class="nav-item">
-        <div class="nav-link active" id="topup-content" data-toggle="tab" href="#topup" role="tab" aria-control="topup" aria-selected="true">แพ็กเกจเติมเงิน </div>
-      </li>
-      <li class="nav-item"> 
-        <div class="nav-link" id="monthly-content" data-toggle="tab" href="#monthly" role="tab" aria-control="monthly" aria-selected="false">แพ็กเกจรายเดือน  </div>
-      </li>
-    </ul>
-    <div class="tab-content">
-      <div class="tab-pane fade show active" id="topup" role="rabpanel" aria-labelledby="topup-content">
-        <h1>Hi TopUp</h1>
+    <section class="pt-5">
+      <div class="container">
+        <ul class="nav nav-tabs justify-content-center border-0" role="tablist">
+          <li class="nav-item col p-0">
+            <div class="nav-link active package-tab" id="topup-content" data-toggle="tab" href="#topup" role="tab" aria-control="topup" aria-selected="true">แพ็กเกจเติมเงิน </div>
+          </li>
+          <li class="nav-item col p-0"> 
+            <div class="nav-link package-tab" id="monthly-content" data-toggle="tab" href="#monthly" role="tab" aria-control="monthly" aria-selected="false">แพ็กเกจรายเดือน  </div>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="topup" role="rabpanel" aria-labelledby="topup-content">
+            <div class="container p-0">
+              <div class="row">
+                <div class="col">
+                  <div class="card card-wrapper">
+                    <div class="card-body card-promotion">
+                      <div class="card-title">เน็ตไม่อั้น แบบรายครั้ง แถมไอเทมพิเศษ!</div>
+                      <div class="rov-logo"><img class="img-fluid" src="images/logo-rov.png" alt=""/></div>
+                    </div>
+                    <div class="card-body card-benefit">  
+                      <div class="card-benefit__mbps">
+                        <div class="card-benefit__num">10</div>
+                        <div class="card-benefit__unit">Mbps </div>
+                      </div>
+                      <div class="card-benefit__gb">
+                        <div class="card-benefit__num">5</div>
+                        <div class="card-benefit__unit">GB</div>
+                      </div>
+                      <div class="card-benefit__hrs">
+                        <div class="card-benefit__num">24 </div>
+                        <div class="card-benefit__unit">ชั่วโมง</div>
+                      </div>
+                      <div class="card-benefit__bht">
+                        <div class="card-benefit__num">34 </div>
+                        <div class="card-benefit__unit">บาท</div>
+                      </div>
+                    </div><a class="purchase-btn mx-auto" href="">ซื้อเลย  </a>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body card-promotion">
+                      <div class="card-title">เน็ตไม่อั้น แบบรายครั้ง แถมไอเทมพิเศษ!</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade show" id="monthly" role="rabpanel" aria-labelledby="monthly-content">
+            <h1>Hi Monthly</h1>
+          </div>
+        </div>
       </div>
-      <div class="tab-pane fade show" id="monthly" role="rabpanel" aria-labelledby="monthly-content">
-        <h1>Hi Monthly</h1>
-      </div>
-    </div>
+    </section>
     <script async="async" src="js/main-dist.js"></script>
   </body>
 </html>

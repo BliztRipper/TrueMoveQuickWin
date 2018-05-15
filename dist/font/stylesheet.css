@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'TrueTextA';
+    src: url('TrueTextA.woff2') format('woff2'),
+        url('TrueTextA.woff') format('woff'),
+        url('TrueTextA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'True';
+    src: url('TrueBold.woff2') format('woff2'),
+        url('TrueBold.woff') format('woff'),
+        url('TrueBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'True';
+    src: url('TrueLight.woff2') format('woff2'),
+        url('TrueLight.woff') format('woff'),
+        url('TrueLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'True';
+    src: url('TrueMedium.woff2') format('woff2'),
+        url('TrueMedium.woff') format('woff'),
+        url('TrueMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
