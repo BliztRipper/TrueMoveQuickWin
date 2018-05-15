@@ -1,0 +1,12 @@
+{
+  "name": "TrueMoveQuickWin",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/BliztRipper/TrueMoveQuickWin.git",
+  "author": "Arnon <nonthegenocide@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1"
+  }
+}
