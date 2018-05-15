@@ -9,31 +9,17 @@ block body
           .nav-link.package-tab(id='monthly-content' data-toggle="tab" href="#monthly" role='tab' aria-control='monthly' aria-selected='false') แพ็กเกจรายเดือน  
       .tab-content
         .tab-pane.fade.show.active(id='topup' role='rabpanel' aria-labelledby='topup-content')
-          .container.p-0
-            .row
-              .col
-                .card.card-wrapper
-                  .card-body.card-promotion
-                    .card-title เน็ตไม่อั้น แบบรายครั้ง แถมไอเทมพิเศษ!
-                    .rov-logo
-                      img.img-fluid(src="images/logo-rov.png", alt="")
-                  .card-body.card-benefit   
-                    .card-benefit__mbps
-                      .card-benefit__num 10
-                      .card-benefit__unit Mbps 
-                    .card-benefit__gb
-                      .card-benefit__num 5
-                      .card-benefit__unit GB
-                    .card-benefit__hrs
-                      .card-benefit__num 24 
-                      .card-benefit__unit ชั่วโมง
-                    .card-benefit__bht
-                      .card-benefit__num 34 
-                      .card-benefit__unit บาท
-                  a.purchase-btn.mx-auto(href='') ซื้อเลย  
-              .col
-                .card
-                  .card-body.card-promotion
-                    .card-title เน็ตไม่อั้น แบบรายครั้ง แถมไอเทมพิเศษ!
+          include _promotion
         .tab-pane.fade.show(id='monthly' role='rabpanel' aria-labelledby='monthly-content')
-          h1 Hi Monthly
+          include _promotion
+  section
+    .container
+      .filter
+        .filter__title เลือกการแสดงผล
+        .filter__item แพคเกจ 1 วัน     
+        .filter__item แพ็กเกจ 7 วัน    
+        .filter__item แพ็กเกจ 30 วัน    
+        .filter__item โปรเด็ดในชั่วโมงเร่งด่วน    
+        .filter__item โปรใสๆใช้สบายตลอดวัน
+  footer.footer
+    p.text-center ©True Corporation Public Company Limited All rights reserved.          

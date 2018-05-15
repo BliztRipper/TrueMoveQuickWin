@@ -66,7 +66,8 @@ body {
 .card-wrapper{
     background-image: linear-gradient(to top, #f5f5f5, #ffffff);
     box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2);
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 .card-promotion{
   border-radius: 8px;
@@ -144,7 +145,8 @@ body {
 }
 
 .purchase-btn{
-  padding: 1rem 11rem;
+  padding: 1rem 0;
+  width: 400px;
   border-radius: 8px;
   background-color: #e32526;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
@@ -159,4 +161,129 @@ body {
   letter-spacing: normal;
   display: inline-block;
   color: #ffffff;
+  @media(max-width: 992px){
+    width: 250px;
+  }
+  &:hover{
+    color: #ffffff;
+  }
+  }
+
+  .more-detail{
+    padding-top: 4px;
+    text-align: center;
+    font-family: True;
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #999999;
+    &__icon{
+      margin-top: 0.5rem;
+      transform: rotate(180deg);
+      transition: 200ms;
+      cursor: pointer;
+      &.expand{
+        transform: rotate(0deg);
+      }
+    }
+  }
+  .collapseBody{
+    background-color: transparent;
+    margin: 0 1rem;
+  }
+
+  .details-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-bottom: 1px solid #e6e6e6;
+    .detail-title{
+      font-family: True;
+      font-size: 1.125rem;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #666666;
+    }
+    .detail-value{
+      font-family: True;
+      font-size: 1.125rem;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: right;
+      color: #333333;
+      &.red{
+        color:#e32526;
+      }
+    }
+  }
+  .detail-notice{
+    padding-top: 1rem;
+    font-family: True;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #999999;
+  }
+  .filter{
+    &__title{
+      font-family: True;
+      font-size: 1rem;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #dddddd;
+    }
+    &__item{
+      border-radius: 3px;
+      background-color: #ffffff;
+      border: solid 1px #bababa;
+      display: inline-block;
+      padding: 0.5rem 1rem; 
+      margin-top: 1rem;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-family: True;
+      font-size: 1.125rem;
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #bababa;
+      cursor: pointer;
+      &.active{
+        border: solid 1px #e32526;
+        color:#e32526;
+      }
+
+    }
+  }
+
+  .footer{
+    margin: 2.5rem auto;
+    font-family: HelveticaNeue;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+    color: #bababa;
   }
