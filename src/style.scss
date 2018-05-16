@@ -44,7 +44,7 @@ body {
 
 .package-tab {
   font-family: 'True';
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -56,6 +56,9 @@ body {
   &.active{
     background-color: #121212 !important;
     color: #ffffff !important;
+  }
+  @media(max-width: 400px){
+    font-size: 1.4rem;
   }
 }
 
