@@ -14,6 +14,7 @@ body {
   height: 100%;
 }
 
+
 @font-face {
   font-family: 'TrueTextA';
   src: url('../font/TrueTextA.woff2') format('woff2'), url('TrueTextA.woff') format('woff'), url('TrueTextA.ttf') format('truetype');
@@ -41,6 +42,11 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+
+.container-wrapper{
+  padding: 0;
+}
+
 
 .nav-main{
   display: flex;
@@ -82,7 +88,9 @@ body {
       text-align: center;
   }
 }
-
+.card-wrapper{
+  width: 345px;
+}
 .package-tab {
   font-family: 'True';
   font-size: 1.875rem;
@@ -191,7 +199,7 @@ body {
 
 .purchase-btn{
   padding: 1rem 0;
-  width: 400px;
+  width: 300px;
   border-radius: 8px;
   background-color: #e32526;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);

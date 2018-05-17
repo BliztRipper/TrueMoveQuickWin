@@ -1,43 +1,45 @@
 extends _template
 block body
-  .main-head.border-bottom
-    img.icon_fbtrue.mx-auto.d-block.py-4(src='https://topping.truemoveh.com/assets/topping/images/svg/icon_fb&true.png', srcset='https://topping.truemoveh.com/assets/topping/images/svg/icon_fb&true@2x.png 2x,https://topping.truemoveh.com/assets/topping/images/svg/icon_fb&true@3x.png 3x')
-  nav
-    .container-fluid.nav-main
-      a.col-4.d-flex.justify-content-center.align-items-center.navtab-head.active(href='https://topping.truemoveh.com/')
-        img.img-fluid(src='https://topping.truemoveh.com/assets/topping/images/bestseller-icon.png', alt='ขายดี' width='20')
-        .nav-text.ml-2 ขายดี 
-      a.col-4.d-flex.justify-content-center.align-items-center.navtab-head(href='https://topping.truemoveh.com/campaign')
-        img.img-fluid(src='https://topping.truemoveh.com/assets/topping/images/promotion-ico.png', alt='โปรโมชั่น' width='20')
-        .nav-text.ml-2 โปรโมชั่น
-      a.col-4.d-flex.justify-content-center.align-items-center.navtab-head(href='https://topping.truemoveh.com/search')       
-        img.img-fluid(src='https://topping.truemoveh.com/assets/topping/images/search-ico.png', alt='ค้นหา' width='20')
-        .nav-text.ml-2 ค้นหา 
-  section.pt-5
-    .container 
-      header
-        h1.header__title แพ็กเกจเสริมทรูมูฟเอช
-      ul.nav.nav-tabs.justify-content-center.border-0(role='tablist')
-        li.nav-item.col.p-0
-          .nav-link.active.package-tab.rounded-left(id='topup-content' data-toggle="tab" href="#topup" role='tab' aria-control='topup' aria-selected='true' style='border-top-right-radius: 0;') แพ็กเกจเติมเงิน 
-        li.nav-item.col.p-0 
-          .nav-link.package-tab.rounded-right(id='monthly-content' data-toggle="tab" href="#monthly" role='tab' aria-control='monthly' aria-selected='false' style='border-top-left-radius: 0;') แพ็กเกจรายเดือน  
-      .tab-content
-        .tab-pane.fade.show.active(id='topup' role='tabpanel' aria-labelledby='topup-content')
-          include _promotion
-        .tab-pane.fade.show(id='monthly' role='tabpanel' aria-labelledby='monthly-content')
-          include _promotion-2 
   section
-    .container
-      .filter
-        .filter__title เลือกการแสดงผล
-        .filter__item แพคเกจ 1 วัน
-        .filter__item แพ็กเกจ 7 วัน
-        .filter__item แพ็กเกจ 30 วัน
-        .filter__item โปรเด็ดในชั่วโมงเร่งด่วน    
-        .filter__item โปรใสๆใช้สบายตลอดวัน
-      .promotion
-        h3.promotion__title เน็ตทรูมูฟ เอช ราคาพิเศษ
-        p.promotion__paragraph พบกับเน็ตทรูมูฟ เอช หลากหลายแพ็คเกจ อยากสมัครเน็ตทรูแบบสะดวก ง่าย ไว ไม่ต้องกังวลว่า เน็ตทรูกดอะไร ก็สมัครได้ในราคาสุดพิเศษกับ แพ็กเกจทรูหลากหลายแบบทั้งเน็ตทรูรายวัน เน็ตทรู 3 วัน เน็ตทรูรายเดือน เน็ตทรูรายสัปดาห์ และเน็ตทรู ไม่อั้น ไม่ลดสปีดอีกหลากหลายแบบ ให้ลูกค้า TrueMove H พบประสบการณ์ใหม่กับช่องทางการสมัครอินเทอร์เน็ตจากทรูมูฟ เอช ที่ง่ายกว่า ไม่ว่าจะเป็นลูกค้าแบบเติมเงิน หรือ รายเดือนก็สามารถใช้งานได้สะดวกสบาย ไม่ว่าจะต้องการเพิ่มความเร็วเน็ตทรู หรือสมัครเน็ตทรูแพ็คเกจใหม่ ก็สามารถทำได้ง่ายๆ ผ่านเว็บไซต์นี้
-  footer.footer
-    p.text-center ©True Corporation Public Company <br/>Limited All rights reserved.          
+    .container-fluid
+      .main-head.border
+        img.icon_fbtrue.mx-auto.d-block.py-3(src='https://topping.truemoveh.com/assets/topping/images/svg/icon_fb&true.png', srcset='https://topping.truemoveh.com/assets/topping/images/svg/icon_fb&true@2x.png 2x,https://topping.truemoveh.com/assets/topping/images/svg/icon_fb&true@3x.png 3x')
+      nav
+        .nav-main.border
+          a.col-4.d-flex.justify-content-center.align-items-center.navtab-head.active(href='https://topping.truemoveh.com/')
+            img.img-fluid(src='https://topping.truemoveh.com/assets/topping/images/bestseller-icon.png', alt='ขายดี' width='20')
+            .nav-text.ml-2 ขายดี 
+          a.col-4.d-flex.justify-content-center.align-items-center.navtab-head(href='https://topping.truemoveh.com/campaign')
+            img.img-fluid(src='https://topping.truemoveh.com/assets/topping/images/promotion-ico.png', alt='โปรโมชั่น' width='20')
+            .nav-text.ml-2 โปรโมชั่น
+          a.col-4.d-flex.justify-content-center.align-items-center.navtab-head(href='https://topping.truemoveh.com/search')       
+            img.img-fluid(src='https://topping.truemoveh.com/assets/topping/images/search-ico.png', alt='ค้นหา' width='20')
+            .nav-text.ml-2 ค้นหา
+    section
+      .container 
+        header
+          h1.header__title แพ็กเกจเสริมทรูมูฟเอช
+        ul.nav.nav-tabs.justify-content-center.border-0(role='tablist' style='cursor:pointer;')
+          li.nav-item.col.p-0.d-flex.justify-content-end
+            .nav-link.active.package-tab.rounded-left.w-75(id='topup-content' data-toggle="tab" href="#topup" role='tab' aria-control='topup' aria-selected='true' style='border-top-right-radius: 0;') แพ็กเกจเติมเงิน 
+          li.nav-item.col.p-0 
+            .nav-link.package-tab.rounded-right.w-75(id='monthly-content' data-toggle="tab" href="#monthly" role='tab' aria-control='monthly' aria-selected='false' style='border-top-left-radius: 0;') แพ็กเกจรายเดือน  
+        .tab-content
+          .tab-pane.fade.show.active(id='topup' role='tabpanel' aria-labelledby='topup-content')
+            include _promotion
+          .tab-pane.fade.show(id='monthly' role='tabpanel' aria-labelledby='monthly-content')
+            include _promotion-2 
+    section
+      .container
+        .filter
+          .filter__title เลือกการแสดงผล
+          .filter__item แพคเกจ 1 วัน
+          .filter__item แพ็กเกจ 7 วัน
+          .filter__item แพ็กเกจ 30 วัน
+          .filter__item โปรเด็ดในชั่วโมงเร่งด่วน    
+          .filter__item โปรใสๆใช้สบายตลอดวัน
+        .promotion
+          h3.promotion__title เน็ตทรูมูฟ เอช ราคาพิเศษ
+          p.promotion__paragraph พบกับเน็ตทรูมูฟ เอช หลากหลายแพ็คเกจ อยากสมัครเน็ตทรูแบบสะดวก ง่าย ไว ไม่ต้องกังวลว่า เน็ตทรูกดอะไร ก็สมัครได้ในราคาสุดพิเศษกับ แพ็กเกจทรูหลากหลายแบบทั้งเน็ตทรูรายวัน เน็ตทรู 3 วัน เน็ตทรูรายเดือน เน็ตทรูรายสัปดาห์ และเน็ตทรู ไม่อั้น ไม่ลดสปีดอีกหลากหลายแบบ ให้ลูกค้า TrueMove H พบประสบการณ์ใหม่กับช่องทางการสมัครอินเทอร์เน็ตจากทรูมูฟ เอช ที่ง่ายกว่า ไม่ว่าจะเป็นลูกค้าแบบเติมเงิน หรือ รายเดือนก็สามารถใช้งานได้สะดวกสบาย ไม่ว่าจะต้องการเพิ่มความเร็วเน็ตทรู หรือสมัครเน็ตทรูแพ็คเกจใหม่ ก็สามารถทำได้ง่ายๆ ผ่านเว็บไซต์นี้
+    footer.footer
+      p.text-center ©True Corporation Public Company <br/>Limited All rights reserved.          
