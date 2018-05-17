@@ -1,7 +1,18 @@
 extends _template
 block body
+  nav
+    .container-fluid.nav-main
+      a.col-4.d-flex.justify-content-center.align-items-center.navtab-head.active(href='https://topping.truemoveh.com/')
+        img.img-fluid(src='https://topping.truemoveh.com/assets/topping/images/bestseller-icon.png', alt='ขายดี')
+        .nav-text ขายดี 
+      a.col-4.d-flex.justify-content-center.align-items-center.navtab-head(href='https://topping.truemoveh.com/campaign')
+        img.img-fluid(src='https://topping.truemoveh.com/assets/topping/images/promotion-ico.png', alt='โปรโมชั่น')
+        .nav-text โปรโมชั่น
+      a.col-4.d-flex.justify-content-center.align-items-center.navtab-head(href='https://topping.truemoveh.com/search')       
+        img.img-fluid(src='https://topping.truemoveh.com/assets/topping/images/search-ico.png', alt='ค้นหา')
+        .nav-text ค้นหา 
   section.pt-5
-    .container
+    .container 
       header
         h1.header__title แพ็กเกจเสริมทรูมูฟเอช
       ul.nav.nav-tabs.justify-content-center.border-0(role='tablist')
@@ -18,9 +29,9 @@ block body
     .container
       .filter
         .filter__title เลือกการแสดงผล
-        .filter__item แพคเกจ 1 วัน     
-        .filter__item แพ็กเกจ 7 วัน    
-        .filter__item แพ็กเกจ 30 วัน    
+        .filter__item แพคเกจ 1 วัน
+        .filter__item แพ็กเกจ 7 วัน
+        .filter__item แพ็กเกจ 30 วัน
         .filter__item โปรเด็ดในชั่วโมงเร่งด่วน    
         .filter__item โปรใสๆใช้สบายตลอดวัน
       .promotion

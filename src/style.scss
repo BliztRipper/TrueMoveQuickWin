@@ -42,6 +42,30 @@ body {
   font-style: normal;
 }
 
+.nav-main{
+  display: flex;
+  justify-content: center;
+  .navtab-head{
+    font-family: True;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #404040;
+    text-decoration: none;
+    padding: 1rem 0;
+    &.active{
+      border-bottom: 2px solid #f53f42;
+    }
+  }
+  .nav-text{
+    white-space: nowrap;
+  }
+}
+
 .header{
   &__title{
       padding: 1rem 0;
