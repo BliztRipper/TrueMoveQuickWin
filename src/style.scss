@@ -57,6 +57,7 @@ body {
     color: #404040;
     text-decoration: none;
     padding: 1rem 0;
+    border-bottom: solid 0.5px #dddddd;
     &.active{
       border-bottom: 2px solid #f53f42;
     }
