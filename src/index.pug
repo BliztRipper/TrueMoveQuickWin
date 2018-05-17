@@ -6,9 +6,9 @@ block body
         h1.header__title แพ็กเกจเสริมทรูมูฟเอช
       ul.nav.nav-tabs.justify-content-center.border-0(role='tablist')
         li.nav-item.col.p-0
-          .nav-link.active.package-tab(id='topup-content' data-toggle="tab" href="#topup" role='tab' aria-control='topup' aria-selected='true') แพ็กเกจเติมเงิน 
+          .nav-link.active.package-tab.rounded-left(id='topup-content' data-toggle="tab" href="#topup" role='tab' aria-control='topup' aria-selected='true' style='border-top-right-radius: 0;') แพ็กเกจเติมเงิน 
         li.nav-item.col.p-0 
-          .nav-link.package-tab(id='monthly-content' data-toggle="tab" href="#monthly" role='tab' aria-control='monthly' aria-selected='false') แพ็กเกจรายเดือน  
+          .nav-link.package-tab.rounded-right(id='monthly-content' data-toggle="tab" href="#monthly" role='tab' aria-control='monthly' aria-selected='false' style='border-top-left-radius: 0;') แพ็กเกจรายเดือน  
       .tab-content
         .tab-pane.fade.show.active(id='topup' role='tabpanel' aria-labelledby='topup-content')
           include _promotion
