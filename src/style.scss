@@ -42,6 +42,22 @@ body {
   font-style: normal;
 }
 
+.header{
+  &__title{
+      padding: 1rem 0;
+      font-family: True;
+      font-size: 1.5rem;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #666666;
+      text-align: center;
+  }
+}
+
 .package-tab {
   font-family: 'True';
   font-size: 1.875rem;
@@ -116,7 +132,7 @@ body {
     @extend .card-benefit__mbps;
     border-left: 1px solid #e6e6e6;
     border-right: 1px solid #e6e6e6;
-    color:#e32526;
+    color:#333;
   }
   &__hrs{
     @extend .card-benefit__mbps;
@@ -241,6 +257,7 @@ body {
     color: #999999;
   }
   .filter{
+    margin-bottom: 3rem;
     &__title{
       font-family: True;
       font-size: 1rem;
@@ -275,6 +292,20 @@ body {
         color:#e32526;
       }
 
+    }
+  }
+
+  .promotion{
+    &__title,
+    &__paragraph {
+      font-family: True;
+      font-size: 1.125rem;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 0.75;
+      letter-spacing: normal;
+      color: #bababa;
     }
   }
 
