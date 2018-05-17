@@ -254,7 +254,18 @@ body {
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #999999;
+    color: #999;
+  }
+  .detail-fup{
+    padding-top: 1rem;
+    font-family: True;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #333;
   }
   .filter{
     margin-bottom: 3rem;
@@ -303,7 +314,7 @@ body {
       font-weight: 500;
       font-style: normal;
       font-stretch: normal;
-      line-height: 0.75;
+      line-height: 0.85;
       letter-spacing: normal;
       color: #bababa;
     }
