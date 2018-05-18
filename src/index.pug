@@ -1,7 +1,7 @@
 extends _template
 block body
   section
-    .container-fluid
+    .container-fluid.p-0
       .main-head.border.d-flex.align-items-center
         img.ml-4(src="images/hamburger.png", alt="" width='24')
         img.icon_fbtrue.mx-auto.d-block.py-3(src='https://topping.truemoveh.com/assets/topping/images/svg/icon_fb&true.png', srcset='https://topping.truemoveh.com/assets/topping/images/svg/icon_fb&true@2x.png 2x,https://topping.truemoveh.com/assets/topping/images/svg/icon_fb&true@3x.png 3x')
@@ -23,9 +23,9 @@ block body
           h1.header__title แพ็กเกจเสริมทรูมูฟเอช
         ul.nav.nav-tabs.justify-content-center.border-0(role='tablist' style='cursor:pointer;')
           li.nav-item.col.p-0.d-flex.justify-content-end
-            .nav-link.active.package-tab.w-100(id='topup-content' data-toggle="tab" href="#topup" role='tab' aria-control='topup' aria-selected='true' style='border-top-right-radius: 0; border-top-left-radius: 8px; border-bottom-left-radius: 8px;') แพ็กเกจเติมเงิน 
+            .nav-link.active.package-tab.w-100(id='topup-content' data-toggle="tab" href="#topup" role='tab' aria-control='topup' aria-selected='true' style='border-top-right-radius: 0; border-top-left-radius: 8px; border-bottom-left-radius: 8px;') เติมเงิน 
           li.nav-item.col.p-0 
-            .nav-link.package-tab.w-100(id='monthly-content' data-toggle="tab" href="#monthly" role='tab' aria-control='monthly' aria-selected='false' style='border-top-left-radius: 0; border-top-right-radius: 8px; border-bottom-right-radius: 8px;') แพ็กเกจรายเดือน  
+            .nav-link.package-tab.w-100(id='monthly-content' data-toggle="tab" href="#monthly" role='tab' aria-control='monthly' aria-selected='false' style='border-top-left-radius: 0; border-top-right-radius: 8px; border-bottom-right-radius: 8px;') รายเดือน  
         .tab-content
           .tab-pane.fade.show.active(id='topup' role='tabpanel' aria-labelledby='topup-content')
             include _promotion
