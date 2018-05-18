@@ -90,6 +90,7 @@ body {
 }
 .card-wrapper{
   width: 345px;
+  border:none;
 }
 .package-tab {
   font-family: 'True';
@@ -106,8 +107,8 @@ body {
     background-color: #121212 !important;
     color: #ffffff !important;
   }
-  @media(max-width: 400px){
-    font-size: 1.4rem;
+  @media(max-width: 500px){
+    font-size: 1.2rem;
   }
 }
 
@@ -218,7 +219,7 @@ body {
   display: inline-block;
   color: #ffffff;
   @media(max-width: 992px){
-    width: 250px;
+    width: 270px;
   }
   &:hover{
     color: #ffffff;
