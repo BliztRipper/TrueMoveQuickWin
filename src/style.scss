@@ -1,5 +1,8 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.min';
 
+
+
+/*Custom Start From Here*/
 :root {
   padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
 }
@@ -90,7 +93,7 @@ body {
   }
 }
 .card-wrapper{
-  width: 345px;
+  width: 100%;
   border:none;
 }
 .package-tab {
@@ -122,6 +125,8 @@ body {
     box-shadow: 0 6px 14px 0 rgba(0, 0, 0, 0.2);
     padding-bottom: 1rem;
     margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .card-promotion{
   border-radius: 8px;
@@ -154,23 +159,24 @@ body {
 }
 .card-benefit{
   display: flex;
-  padding-top: 0;
-  justify-content: center;
+  padding-top: 0.5rem;
+  justify-content: space-around;
+  padding-left: 0;
+  padding-right: 0;
   &__mbps{
     display: flex;
     flex-direction: column;
-    border-top: 1px solid #e6e6e6;
-    padding: 0.4rem 1rem;
-    width: 100px;
+    width: 105px;
     justify-content: center;
     align-items: center;
     color:#e32526;
   }
   &__gb{
-    @extend .card-benefit__mbps;
-    border-left: 1px solid #e6e6e6;
     border-right: 1px solid #e6e6e6;
     color:#333;
+    width: 60%;
+    padding-left: 0;
+    padding-right: 1rem;
   }
   &__hrs{
     @extend .card-benefit__mbps;
@@ -187,9 +193,11 @@ body {
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
-    line-height: 0.75;
+    line-height: 1;
     letter-spacing: normal;
-    white-space: nowrap;
+    @media(max-width: 500px){
+      white-space: pre;
+    }
   }
   &__unit{
     font-size: 1.125rem;
@@ -204,7 +212,7 @@ body {
 
 .purchase-btn{
   padding: 1rem 0;
-  width: 300px;
+  width: 100%;
   border-radius: 8px;
   background-color: #e32526;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
@@ -219,9 +227,6 @@ body {
   letter-spacing: normal;
   display: inline-block;
   color: #ffffff;
-  @media(max-width: 992px){
-    width: 270px;
-  }
   &:hover{
     color: #ffffff;
   }
