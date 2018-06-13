@@ -7415,6 +7415,19 @@ body {
   line-height: 1.25;
   letter-spacing: normal;
   text-align: center;
-  color: #bababa; }
+  color: #bababa;
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  white-space: nowrap; }
+
+.choosebox-radio input[type=radio]:checked ~ label {
+  font-weight: 400; }
+
+strong {
+  font-weight: 400; }
 
 /*# sourceMappingURL=style.css.map */
