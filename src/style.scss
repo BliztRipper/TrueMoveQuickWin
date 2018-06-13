@@ -375,16 +375,6 @@ body {
     letter-spacing: normal;
     text-align: center;
     color: #bababa;
-    position: fixed;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-  }
-
-  .choosebox-radio input[type=radio]:checked~label {
-    font-weight: 400;
-}
-  strong{
-    font-weight: 400;
+    bottom:0;
+    width:100%;
   }
